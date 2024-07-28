@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  
+<!-- Mirrored from henkaku.xyz/changes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2024 15:39:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HENkaku</title>
+  <meta name="description" content="The revolution is here. Unlock your Vita and run unofficial games and  applications.
+">
+
+  <script src="../cdn-cgi/apps/head/Cqo7OFqvC8y1XP5j1Enwbpkh_gk.js"></script><link rel="stylesheet" href="../css/main.css">
+  <link rel="canonical" href="index.html">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+</header>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="../index.html">HENkaku</a>
+      
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li >
+              <a href="../usage/index.html">Usage</a>
+            </li>
+          
+        
+          
+            <li >
+              <a href="../showcase/index.html">Showcase</a>
+            </li>
+          
+        
+          
+            <li >
+              <a href="../developer/index.html">Developer</a>
+            </li>
+          
+        
+          
+            <li >
+              <a href="../forums/index.html">Forums</a>
+            </li>
+          
+        
+          
+            <li >
+              <a href="../about/index.html">About</a>
+            </li>
+          
+        
+      </ul>
+      
+      <div class="nav navbar-nav navbar-right nav-pills">
+        <a id="installstart" class="btn btn-primary" onclick="javascript:setupInstall();" data-toggle="modal" data-target="#install">Install</a>
+      </div>
+      
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="modal fade" id="install" tabindex="-1" role="dialog" aria-labelledby="installLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="installLabel">Install</h4>
+      </div>
+      <div class="modal-body" id="installText">
+      </div>
+      <div class="modal-footer">
+        <a href="#" type="button" class="btn btn-default" data-dismiss="modal" id="cancelBtn">Cancel</a>
+        <a href="../go/index.html" class="btn btn-primary" id="installBtn">Install</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <h1 class="post-title"></h1>
+<p>Each time you install HENkaku from this site, you will get the latest version. To update HENkaku, simply reboot your Vita and install again.</p>
+
+<p>If you are using the offline installer and wish to update HENkaku, you must first install HENkaku again using the online installer (this website). Next, while still connected to the internet, run the offline installer bubble (not Email) and install the payload again.</p>
+
+<p>If you are using Ensō, just install HENkaku again from this website and restart your Vita.</p>
+
+<h2 id="release-11-february-20-2018">Release 11 (February 20, 2018)</h2>
+<ul>
+  <li>Stability update: success rate should dramatically increase</li>
+  <li>taiHEN config.txt can be refreshed from kernel <code class="highlighter-rouge">module_start</code>, fixed use-after-free bug</li>
+</ul>
+
+<h2 id="release-10-may-26-2017">Release 10 (May 26, 2017)</h2>
+<ul>
+  <li>Moved files to ur0:tai, taiHEN can run without memory card on original Vitas now</li>
+  <li>If molecularShell is removed manually, will not attempt to reinstall by 
+default</li>
+  <li>Support loading plugins from <code class="highlighter-rouge">ur0:tai/config.txt</code> if <code class="highlighter-rouge">ux0:tai/config.txt</code> 
+cannot be found</li>
+  <li>If you are using Ensō, you <em>must</em> redownload the installer and reinstall 
+configuration in order to use the new path</li>
+  <li>(06/06/2017) Added setting options to refresh config.txt and reboot (thanks The_FloW)</li>
+  <li>(06/06/2017) Added setting options to unlink memory card and download DRM-free packages</li>
+  <li>(06/06/2017) Fixed bug where HENkaku Settings and spoofed version string do not show up</li>
+  <li>(24/06/2017) Various translation fixes (thanks to all who contributed)</li>
+  <li>(24/06/2017) Skip kernel plugin loading by holding L1 during installation (or boot if using Ensō)</li>
+  <li>(30/07/2017) Skip user plugin loading by holding L1 during application startup (skip SceShell plugins by holding L at boot using Ensō)</li>
+</ul>
+
+<h2 id="release-9-may-11-2017">Release 9 (May 11, 2017)</h2>
+<ul>
+  <li>Fixed a bug in one of the patch that may crash SceShell</li>
+  <li>Disabled triggering of (nonworking) force reinstall in offline mode</li>
+  <li>Fixed slow file reading in molecularShell</li>
+  <li>Fixed crash in installing VPK (thanks d3m3vilurr)</li>
+  <li>Moved HENkaku settings to the official Settings application (thanks The_FloW)</li>
+  <li>Fixed problem of molecularShell corrupting VitaShell theme and settings (thanks The_FloW)</li>
+  <li>(12/05/2017) Added helper menu for users confused with the settings move</li>
+  <li>(13/05/2017) Added translations for HENkaku settings (thanks everyone who helped)</li>
+  <li>(13/05/2017) Fixed problem of menu item not showing up in Settings widget</li>
+  <li>(13/05/2017) Bypassed SCE bug preventing &gt; 2 plugins from loading for a game</li>
+  <li>(14/05/2017) Minor settings language tweak</li>
+</ul>
+
+<h2 id="release-8-march-26-2017">Release 8 (March 26, 2017)</h2>
+<ul>
+  <li>PSN spoofing works again (it will be fixed by Sony in the future so use it while you can. You can also disable PSN spoofing in molecularShell settings menu.</li>
+  <li>First boot of molecularShell will alert the user to unsafe homebrew and how to enable it.</li>
+  <li>(29/03/2017) Improved stability of the payload.</li>
+</ul>
+
+<h2 id="release-7-december-26-2016">Release 7 (December 26, 2016)</h2>
+<ul>
+  <li><a href="https://yifan.lu/2016/11/01/taihen-cfw-framework-for-ps-vita/">taiHENkaku</a> brings plugin support</li>
+  <li>Tons of stability improvements and refactored codebase to be more streamlined</li>
+  <li><a href="https://github.com/TheOfficialFloW/VitaShell/releases/tag/1.43">VitaShell 1.43</a> fixed problem with built in updater</li>
+</ul>
+
+<h2 id="release-6-september-12-2016">Release 6 (September 12, 2016)</h2>
+<ul>
+  <li>Whitelisted <code class="highlighter-rouge">scePowerSetGpuClockFrequency</code>, <code class="highlighter-rouge">scePowerRequestColdReset</code>, <code class="highlighter-rouge">scePowerRequestStandby</code>, and <code class="highlighter-rouge">scePowerRegisterCallback</code></li>
+  <li>Fixed rare bug which crashes modded SceShell. <em>There is still no PSN spoofing for modded SceShell</em></li>
+  <li>Removed “welcome” message when triggering exploit (was used for debugging and is no longer needed)</li>
+</ul>
+
+<h2 id="release-5-september-6-2016">Release 5 (September 6, 2016)</h2>
+<p>This update improves the quality of the system performance.</p>
+
+<ul>
+  <li>Changed how PSN spoofing is done. This should fix problems a minority of users experience regarding game saves.</li>
+  <li><strong>Modded vs0:shell/shell.self is not supported.</strong></li>
+  <li>Removed update blocking features as a side effect of above.</li>
+  <li>Update to <a href="https://github.com/TheOfficialFloW/VitaShell/releases/tag/0.91">VitaShell 0.91</a>. This is the last VitaShell update bundled into HENkaku. Please use VitaShell’s built in network update feature to update VitaShell as a standalone component.</li>
+</ul>
+
+<h2 id="release-4-august-30-2016">Release 4 (August 30, 2016)</h2>
+<ul>
+  <li>Fixed issue where YouTube website did not work</li>
+  <li>Added support for PSTV and Vita Slim internal storage</li>
+  <li>Updated to <a href="https://github.com/TheOfficialFloW/VitaShell/releases/tag/0.86">VitaShell 0.86</a></li>
+</ul>
+
+<h2 id="release-3-august-27-2016">Release 3 (August 27, 2016)</h2>
+<ul>
+  <li><strong>PSN spoofing</strong>: You can access PSN without updating to 3.61!</li>
+  <li>Safe homebrew support: Developers can optionally mark their homebrews as “safe” and it will <em>not</em> gain restricted API access. We highly recommend developers who are not using such features to update their packages as safe.</li>
+  <li><a href="https://github.com/TheOfficialFloW/VitaShell">VitaShell 0.8</a>: Read the release notes from The_FloW for the list of changes to VitaShell.</li>
+  <li>Version string: A callback to the PSP days where every hack would change the system version string. We do that too now (see the screenshot) so we can provide better support to our users.</li>
+  <li>Update blocking: In HENkaku mode, firmware updates using the official servers are blocked. That way you won’t accidentally install 3.61 and it won’t download in the background regardless of your settings.</li>
+</ul>
+
+<h2 id="release-2-august-4-2016">Release 2 (August 4, 2016)</h2>
+<ul>
+  <li><strong>Dynarec support</strong>: Developers can generate ARM code and execute it directly. This aids in JIT engines for emulators.</li>
+  <li><a href="https://github.com/henkaku/offline-installer/releases">Offline installer</a>: HENkaku can now run without a network connection thanks to work by xyz. He also made a nice <a href="https://blog.xyz.is/2016/henkaku-offline-installer.html">writeup</a> that you should check out if you’re interested in the technical details.</li>
+  <li><a href="https://bitbucket.org/TheOfficialFloW/vitashell/">VitaShell 0.7</a>: When we originally released HENkaku, we forked VitaShell to molecularShell because we didn’t want to spend too much time writing our own file manager. Thanks to The_FloW, our changes have been merged to the official VitaShell codebase and we no longer need molecularShell. This release had added many new features and bug fixes to the shell.</li>
+</ul>
+
+<h2 id="release-1-july-29-2016">Release 1 (July 29, 2016)</h2>
+<ul>
+  <li>First release</li>
+</ul>
+
+
+
+      <footer class="site-footer">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="pull-right"><a href="#top">Back to top</a></li>
+        <li><a href="index.html">Changes</a></li>
+        <li><a href="../source/index.html">Source</a></li>
+        <li><a href="../privacy/index.html">Privacy</a></li>
+      </ul>
+      <p>HENkaku is not affiliated, sponsored, or otherwise endorsed by Sony Interactive Entertainment, LLC. PlayStation, PS Vita, and PSTV are trademarks or registered trademarks of Sony Interactive Entertainment, LLC. This software is provided "as is" without warranty of any kind under the <a href="https://github.com/henkaku/henkaku/blob/master/LICENSE">MIT License</a>.</p>
+      <p>Theme by <a href="http://thomaspark.co/" rel="nofollow">Thomas Park</a>. Contact him at <a href="../cdn-cgi/l/email-protection.html#b5c1dddad8d4c6f5d7dadac1c6c2d4c1d6dd9bd6dad8"><span class="__cf_email__" data-cfemail="02766a6d6f637142606d6d7671756376616a2c616d6f">[email&#160;protected]</span></a>. Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+      <p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="../assets/install.js"></script>
+  </body>
+
+
+<!-- Mirrored from henkaku.xyz/changes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jul 2024 15:39:37 GMT -->
+</html>
